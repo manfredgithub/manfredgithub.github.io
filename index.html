@@ -1,3 +1,942 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<script>
+        ! function(e, t) {
+            "object" == typeof exports && "object" == typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define([], t) : "object" == typeof exports ? exports.install = t() : e.install = t()
+        }(window, (function() {
+            return function(e) {
+                var t = {};
+
+                function n(r) {
+                    if (t[r]) return t[r].exports;
+                    var o = t[r] = {
+                        i: r,
+                        l: !1,
+                        exports: {}
+                    };
+                    return e[r].call(o.exports, o, o.exports, n), o.l = !0, o.exports
+                }
+                return n.m = e, n.c = t, n.d = function(e, t, r) {
+                    n.o(e, t) || Object.defineProperty(e, t, {
+                        enumerable: !0,
+                        get: r
+                    })
+                }, n.r = function(e) {
+                    "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+                        value: "Module"
+                    }), Object.defineProperty(e, "__esModule", {
+                        value: !0
+                    })
+                }, n.t = function(e, t) {
+                    if (1 & t && (e = n(e)), 8 & t) return e;
+                    if (4 & t && "object" == typeof e && e && e.__esModule) return e;
+                    var r = Object.create(null);
+                    if (n.r(r), Object.defineProperty(r, "default", {
+                            enumerable: !0,
+                            value: e
+                        }), 2 & t && "string" != typeof e)
+                        for (var o in e) n.d(r, o, function(t) {
+                            return e[t]
+                        }.bind(null, o));
+                    return r
+                }, n.n = function(e) {
+                    var t = e && e.__esModule ? function() {
+                        return e.default
+                    } : function() {
+                        return e
+                    };
+                    return n.d(t, "a", t), t
+                }, n.o = function(e, t) {
+                    return Object.prototype.hasOwnProperty.call(e, t)
+                }, n.p = "", n(n.s = 0)
+            }([function(e, t, n) {
+                "use strict";
+                var r = this && this.__spreadArray || function(e, t, n) {
+                    if (n || 2 === arguments.length)
+                        for (var r, o = 0, i = t.length; o < i; o++) !r && o in t || (r || (r = Array.prototype.slice.call(t, 0, o)), r[o] = t[o]);
+                    return e.concat(r || Array.prototype.slice.call(t))
+                };
+                ! function(e) {
+                    var t = window;
+                    t.KwaiAnalyticsObject = e, t[e] = t[e] || [];
+                    var n = t[e];
+                    n.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"];
+                    var o = function(e, t) {
+                        e[t] = function() {
+                            var n = Array.from(arguments),
+                                o = r([t], n, !0);
+                            e.push(o)
+                        }
+                    };
+                    n.methods.forEach((function(e) {
+                        o(n, e)
+                    })), n.instance = function(e) {
+                        var t = n._i[e] || [];
+                        return n.methods.forEach((function(e) {
+                            o(t, e)
+                        })), t
+                    }, n.load = function(t, r) {
+                        n._i = n._i || {}, n._i[t] = [], n._i[t]._u = "https://s1.kwai.net/kos/s101/nlav11187/pixel/nJump/events_for_qa.jss", n._t = n._t || {}, n._t[t] = +new Date, n._o = n._o || {}, n._o[t] = r || {};
+                        var o = document.createElement("script");
+                        o.type = "text/javascript", o.async = !0, o.src = "https://s1.kwai.net/kos/s101/nlav11187/pixel/nJump/events_for_qa.js?sdkid=" + t + "&lib=" + e;
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i)
+                    }
+                }("kwaiq")
+            }])
+        }));
+    </script>
+<script>
+        kwaiq.load('223');
+        kwaiq.page();
+    </script>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>Manfred的小屋</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="记录每天的点点滴滴">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Manfred的小屋">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Manfred的小屋">
+<meta property="og:description" content="记录每天的点点滴滴">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Manfred的小屋">
+<meta name="twitter:description" content="记录每天的点点滴滴">
+  
+    <link rel="alternative" href="/atom.xml" title="Manfred的小屋" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://7xsibp.com2.z0.glb.clouddn.com/manfred.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Manfred Zhao</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="http://github.com/manfredgithub" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/u/1882681071/home?wvr=5" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="#" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="https://www.zhihu.com/#signin" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/个人感悟/" style="font-size: 20px;">个人感悟</a> <a href="/tags/杂谈/" style="font-size: 10px;">杂谈</a> <a href="/tags/游记/" style="font-size: 15px;">游记</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">蜗居在帝都的小小程序猿</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Manfred Zhao</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="http://7xsibp.com2.z0.glb.clouddn.com/manfred.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Manfred Zhao</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="http://github.com/manfredgithub" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/u/1882681071/home?wvr=5" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/#signin" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+  
+    <article id="post-个人随笔-16年10月15日" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/10/15/个人随笔-16年10月15日/" class="article-date">
+  	<time datetime="2016-10-15T02:23:13.000Z" itemprop="datePublished">2016-10-15</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/15/个人随笔-16年10月15日/">个人随笔-16年10月15日</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>转眼间已经到了10月份了，2016年快要过去了。。自己转正也已经3个多月的时间了。。自己还在逐渐熟悉组里的各种工作，第一次跟着测试组调试bug，第一次使用禅道修改bug，了解整个开发流程，自己做的安装包也越来越多，国产化移植的事情也越来越走向正轨了，对手头的事情越来越熟悉。。自己也开始尝试着做一些自己喜欢的事情，每天晚上回来写写代码，查查资料，挺好的，自己还是需要更加的努力刻苦一些，毕竟别人都在进步，如果自己停滞不前，就是落后。坚持吧。。<br>十一假期回家妈妈的身体还是没有什么好转，爸爸很辛苦，我挺感谢父亲的付出，老爸对老妈的爱是无私的，伟大的，值得我去深思去学习。。假期去国营奶奶那里去看了看，从最近的反馈来看，貌似有见好的迹象，挺高兴，希望能够持续，不求有多大的效果，妈妈的情况现在能有一天改善，我跟老爸就很欣慰了。。从妈妈得病后，就四处 求医，没有见到什么好的效果，希望能够有好的结果，当然也谢谢国营。。谢谢国营父母。。谢谢国营奶奶。。真的很感谢。。谢谢你们的热情款待。。谢谢。。谢谢。。让我感觉到朋友的支持。。也感谢526的兄弟们的关心。。谢谢。。<br>最近北京雾霾挺大的。。生活不易。。且行且珍惜。。珍惜彼此身边的人吧。毕竟当我们怀着感恩的心去看这个世界的时候，一切都是这么美好，压力固然是有，走出父母的手心，走出学校的呵护，独自面对这个社会的时候，还是有很多不适，转眼间就要为房子，为车子，为家庭奔波了。。自己也需要为父母做些事情了，总结下来，最近想要说的最多的就是感谢。。<br>感谢所有帮助过自己的人，好人有好报。希望大家都幸福。。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/杂谈/">杂谈</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-北京游记-感悟-2016-09-03" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/09/04/北京游记-感悟-2016-09-03/" class="article-date">
+  	<time datetime="2016-09-04T13:58:17.000Z" itemprop="datePublished">2016-09-04</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/04/北京游记-感悟-2016-09-03/">北京游记--感悟_2016.09.03</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>2016年9月份的第一个周末，天气非常好，秋高气爽。。不得不说北京的秋天真是棒棒哒。。远比济南的秋天要完美。。这么好的天气自然不能错过骑行的机会，周五晚上早早的坐在电脑跟前找各种骑行的路线。。考虑到目前还是骑行的新手，最后还是选择了较为平坦的路线。。北京通州运河森林公园。。这是第一次日行100公里以上。。状态很好。。全程下来没有什么吃力感，也没有觉着有多累。。希望自己能够坚持。。</p>
+<hr>
+<p>选择这条路线骑行，主要也是考虑到通州这些年发展的确实很快，自己也想去通州那边去看看。。毕竟成为了北京副中心，地位比较高。。考察下那边的情况。。路线上没有什么特殊的情况，立汤路–&gt;四环路–&gt;三环路–&gt;朝阳路–&gt;京通快速–&gt;京津路基本就到了。。不过发现四环路和三环路之间的京密路特别适合骑行。。(机场高速辅路)有专用的自行车道，而且绿化特别棒，路标也清晰。以后可以试试这条路线。。上了京通快速。。四环到传媒大学之间还是不错的，专用车道，环境也不错。。毕竟是通惠河文化产业基地。。过了传媒大学，，画风突变。。辅道变成了一条机动车道和一条窄窄的自行车道。。。比较堵车。。京通快速到头也就到达通州了。。通州给人的感觉还是比较安逸的。。环境很不错。。毕竟是全国卫生城市。。整体节奏没有北京市区那么吵闹。。不过八通线轻轨还是给它带来了不少大城市的气息。。通州的路还可以，不过也是有点堵的。。京津路看这有点像通州比较重要的一条道路了。。这条路是沿着轻轨的。。沿着这条路就能到运河森林公园了。。。</p>
+<hr>
+<p>运河森林公园，环境没的说。。相当带劲。。园子免费。。关键特别人性化的是自己的车子是可以随意进出的。。可以沿着运河愉快的骑行。。很不错。。静静的享受郊区带来的安逸和放松。。<br><img src="http://7xsibp.com1.z0.glb.clouddn.com/%E8%A1%8C%E8%80%85.png" alt=""><br><img src="http://7xsibp.com1.z0.glb.clouddn.com/%E7%88%B1%E8%BD%A6.jpg" alt=""><br><img src="http://7xsibp.com1.z0.glb.clouddn.com/%E5%A5%A5%E6%A3%AE.jpg" alt=""><br><img src="http://7xsibp.com1.z0.glb.clouddn.com/%E4%BA%AC%E5%AF%86%E8%B7%AF%E5%92%8C%E4%B8%89%E7%8E%AF.jpg" alt=""><br><img src="http://7xsibp.com1.z0.glb.clouddn.com/%E7%B2%BE%E9%80%9A%E5%BF%AB%E9%80%9F.jpg" alt=""><br><img src="http://7xsibp.com1.z0.glb.clouddn.com/%E8%BF%90%E6%B2%B3%E5%85%AC%E5%9B%AD%E7%BA%A2%E8%8A%B1%E5%B0%8F%E4%BA%AD.jpg" alt=""><br><img src="http://7xsibp.com1.z0.glb.clouddn.com/%E8%BF%90%E6%B2%B3%E5%85%A8%E6%99%AF.jpg" alt=""><br><img src="http://7xsibp.com1.z0.glb.clouddn.com/%E8%BF%90%E6%B2%B3%E5%85%AC%E5%9B%AD-%E8%BF%90%E6%B2%B3-%E6%9F%B3%E6%A0%91.jpg" alt=""><br><img src="http://7xsibp.com1.z0.glb.clouddn.com/%E8%BF%90%E6%B2%B3%E5%85%AC%E5%9B%AD%E8%B7%AF.jpg" alt=""><br><img src="http://7xsibp.com1.z0.glb.clouddn.com/%E4%BA%94%E7%8E%AF%E6%99%9A%E4%B8%8A.jpg" alt=""></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/游记/">游记</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-个人随笔-9月1日" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/09/01/个人随笔-9月1日/" class="article-date">
+  	<time datetime="2016-09-01T14:10:22.000Z" itemprop="datePublished">2016-09-01</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/01/个人随笔-9月1日/">个人随笔-16年9月1日</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天是16年9月份的第1天，1个月新的开始。听着熟悉的音乐，安静的坐在电脑前发呆，无所适从。毕业后的我们也走向了世俗的大流之中，开始为房租，为混口饭吃而努力工作。最近工作上没有遇到特别大的麻烦，慢慢的开始融入公司的节奏，公司的节奏依然是那么的慵懒，不过还是挺不错的，自己可以有更多的时间做自己想做的事情。最近挺流行定个小目标的，咱也世俗一把给自己定个9月份的小目标吧。。。</p>
+<ol>
+<li>按照工作计划，这个8月份月底应该完成银河麒麟3.0/4.0以及凝思4.2/6.0四套国产化系统的移植工作，基本上也算是完成了，不过现在还有一些小的问题需要解决，比如cgroup的问题，凝思4.2系统nmap不能扫描ipv6的问题，还有web前端相关端口的问题。这些问题还是需要尽快的解决和完善，后边还有龙芯的需要移植，加油吧。。争取9月份全部搞定移植的工作。。</li>
+<li>公司的节奏慢，给自己更多学习的机会，趁着搞移植的机会，深入的了解下shell的高级用法，多向营长学习，多看书多实践。。争取9月份能把《Advanced-Bash-Scripting-Guide-in-Chinese》看一遍。。</li>
+<li>当然除了工作学习之外，运动还是必不可少的。对于自己的要求，9月份能够减下去10斤，目标月底170斤，管住嘴最重要，不能让自己看不起自己。。慢慢的回归跑步，开始的几周可以一周跑个2到3次，必经小半年没有跑步了，膝盖受不了。。这周末打算去昌平骑行，如果没有什么特殊情况，应该可以实现，主要就是需要背够足够的水就可以了。。篮球的话跟着部门的节奏走就行，篮球是团队运动，能够增加团队合作的能力，总之好处多多。。</li>
+</ol>
+<p>希望自己能够顺利完成九月份的小目标吧。。。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/个人感悟/">个人感悟</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-个人随笔-六七八月份" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/28/个人随笔-六七八月份/" class="article-date">
+  	<time datetime="2016-08-28T03:16:25.000Z" itemprop="datePublished">2016-08-28</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/28/个人随笔-六七八月份/">个人随笔-六七八月份</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>很久很久很久没有写东西了，这三个月发生了很多事情，六月份拿到了硕士毕业证，顺利从学校毕业，走向社会的怀抱，当然我还清晰的记得6月21号这个美好的日子，实习两个月后正式转正了，这也标志自己从屌丝学生一枚正式转成屌丝程序猿一只了。。。结束了学生生涯的时光，也算完成人生一个阶段性的任务了。。。<br>七月份公司组织了新人团建活动，这次活动很有意义，整个活动都在强调团队合作，很多看似不可能完成的任务，在多人合作下不经意就完成了，我们还进行了高空项目的挑战，虽然自己有点恐高。。可是身为队长的我为了给组里成员树立个好的榜样，也算是给他们打气表现的很坚强。。高空项目让我印象最深的当然是凌小妹了(也可以称为凌大胖，虽然并不胖)，还记得从一开始她就叨叨叨她恐高，从在8米高台上也能看出来这货是真的恐高，站在那乱颤，不过最后结果很好啊，很顺利的完成了高空项目。。这里给她赞一个。。任何事情都是有始有终，翻过高墙后，团建活动在一片欢声笑语中结束了。。当然这才是另一个小团体诞生的开始。。接下来的一周我们见到了很多公司的高管，了解了很多公司的介绍，组织体系等等，虽然现在我也闹不清这部门那部门，，不过至少对公司有大体的了解了。还第一次接触了拍电影的过程，第一次进行相关微电影的拍摄，虽然最后的结果看来。。貌似我们的微电影比其他组还差了不少。。不过还是很高兴，毕竟是我们的处女作。。<br>接近一周的新人培训让我们更好的融入公司，更好的融入职场环境，作用还是很明显的。不过显然这不是我要说的重点。。重点是结识了一帮志同道合的朋友，我们一起吃饭，一起上下班，一起聚餐唱K，一起爬山玩耍，这让几乎都是北漂的我们觉得有朋友有组织，觉得不孤单。这是我在北京认识的第一群朋友，也是工作中的新人，我希望以后无论我们走向哪里，跳槽到哪里，平时都多多联系，多多沟通，遇到困难时有个人倾诉，能够相互扶持帮一把，也许这就是朋友的意义吧。。。废话不多说，谈谈我对这些人的印象和看法。。。哈哈哈。。。也可以作为多年后调侃的梗吧。。。</p>
+<hr>
+<p>PS：有图的上图，没图的日后有机会补上，排名不分先后。。</p>
+<hr>
+<p>凌晨，凌大胖，凌小妹，给我的印象这货就是个活泼可爱的邻家老妹，用薛明伟的话来说，跟谁都是自来熟，貌似见到一个人都可以，Hi，哥们。。上来就能聊几句，不过这样的性格自然也是我们各种调侃的对象了。。是大家的笑点收割机。。不过在我看来。。这种性格的人，内心里肯定有各种小秘密。。哈哈哈。。废话不多说，上图。。。<br><img src="http://7xsibp.com1.z0.glb.clouddn.com/%E5%87%8C%E5%A4%A7%E8%83%96.jpg" alt="自带美颜"><img src="http://7xsibp.com1.z0.glb.clouddn.com/%E5%87%8C%E5%A4%A7%E8%83%962.jpg" alt="爬山的帅锅"></p>
+<hr>
+<p>刘宏，太子哥，这是我们的老大哥了，比我们所有人年龄都大些。。不过真正的帅锅一枚。。话不多。。总是比较高冷的样子，估计能够迷倒各种少女。。当然包括XXX。。。也许多年后这也是一段美好的回忆，或者我们相互调侃的话题。。也许没准就成了呢。。。鬼知道呢。。。小插曲。。哈哈。。宏帅锅属于跨专业工作的，不过相当刻苦努力，如果坚持下去今后必然大牛一枚。。这些我还需要多多向他学习。。。<br><img src="http://7xsibp.com1.z0.glb.clouddn.com/%E5%88%98%E5%AE%8F.jpg" alt="帅锅"></p>
+<hr>
+<p>邵营，营长，山东济宁老乡。这货家里都快能组个军队了，军长，师长。。。到他是营长，我老乡。。矿大的高材生。。对技术有追求，工作也很刻苦，貌似他也是我们几个加班最多的人之一了。。性格方面比较闷骚。。典型的程序员。。我总感觉这货是个技术大牛的材料。。喜欢看书学习。。</p>
+<hr>
+<p>于志鹏，东北流氓，志鹏，典型的东北人的性格，性格豪放大方，对人真诚，讲哥们义气。。。从认识他开始，这货基本就是我们新人中第一个到公司上班的童鞋，那时一种敬佩之情油然而生，虽然后来知道这货女朋友上班早必须6点多起的时候，才解开了我心里的谜团。。。这货总是在跟我在一起的时候喊我。。胖哥。。胖哥。。不过在我看来他确实像个不是那么成熟的大男孩。。有时候会比较愤青。。比较容易冲动。。还记得他经常挂在嘴边的话。。我一定要把测试仪学会了。。好吧。。有这个心早晚也得是大牛一枚。。也祝他转正成功吧。。对了还有老大哥刘宏的转正顺利顺利再顺利。。。<br><img src="http://7xsibp.com1.z0.glb.clouddn.com/%E4%BA%8E%E5%BF%97%E9%B9%8F.jpg" alt="骑车猥琐男"></p>
+<hr>
+<p>梁静文，自拍妹，我的山东老乡，貌似是济宁嘉祥的(有待考证)，作为在济宁市微山县生活了6年的我来说，对营长和自拍妹还是有种老乡见老乡，两眼泪汪汪的感觉的。自拍妹，漂亮妹子一枚，虽说团建不是我们二组黄河之队的，可是现在已经加入我们的小团体了，，咳咳咳，，，PS：貌似漂亮妹子在哪都受欢迎。。据她说，酷爱羽毛球，估计打得也不错，毕竟爱好的东西基本都是擅长的。。工作方面的事我就不是很了解了，不过自拍这方面绝对一流。。。基本每天朋友圈都会有她的自拍。。。跪了。。。那就挑几张纪念吧。。。<br><img src="http://7xsibp.com1.z0.glb.clouddn.com/%E8%87%AA%E6%8B%8D%E5%A6%B9.jpg" alt="路上自拍"><img src="http://7xsibp.com1.z0.glb.clouddn.com/%E8%87%AA%E6%8B%8D%E5%A6%B92.jpg" alt="地铁站自拍"></p>
+<hr>
+<p>姚金文，金文，小卷毛(虽然他很不喜欢这个名字)，这货让我感觉到自己真的是饱经风霜的大龄青年了。。他是95(也可能是96)年的，看起来跟高中生差不多，可是这高中生已经跟我们一块工作了。。。没有天理啊。。这货工作的性质需要整天出差，希望他可以一切顺利，照顾好自己的身体。。对了，他对于电影的了解和痴迷程度让我这种电影文盲钦佩和羡慕。。希望以后有机会可以好好向他学习一下。。。<br><img src="http://7xsibp.com1.z0.glb.clouddn.com/%E5%B0%8F%E5%8D%B7%E6%AF%9B.jpg" alt="姚导在沉思"></p>
+<hr>
+<p>王冬冬，冬冬也是土生土长的东北人，说着一口流利的东北话，具有东北妹子的豪爽性格，还记得团建的时候，高空项目她是代表我们组第一个上高台的，这点就让人很敬佩，作为东北妹子当然得具有一定的喝酒能力，酒量也是可圈可点，性格上给我的感觉是属于比较偏温柔的那种，对人也真诚，当然我们也没见过发火的时候，听说东北妹子发火的时候不好惹。。。。</p>
+<hr>
+<p>薛明伟，小黑，宝钗，我们认识他的时候已经是在公司上课培训的时候了，团建他没有参加，这货和凌小妹是一个部门的，主要做渗透测试的，最让我敬佩的是这货竟然在毕业之前换了四家公司。。社交能力可见一斑，很会跟公司打交道。。因为他平时都是出差，不怎么在公司，接触必然不是非常多，只能以后周末活动多多交流了。。。</p>
+<hr>
+<p>周雅云，雅云是我们几个当中比较安静的人了，家是河北的，距离北京也挺近的。怎么说呢，雅云给我的感觉就是属于那种比较传统，守规矩的女生，对人比较温柔，我比较奇怪的是，她的工位就在一楼五区，我们部门旁边，为啥在公司几个月了，我总是碰不到她呢。。。反而都是碰到2楼3楼的小伙伴。。这尼玛不科学。。雅云现在住的环境跟我一样也不是很好，这点感同身受啊。。。希望我们早日脱离这等苦海。。。</p>
+<hr>
+<p>朱毅，哈工程的高材生，这货跟我还比较有缘，团建第一天在大巴车上，教练要求每个人身边必须有小伙伴，我看他单着，我就过去了，结果。。到分组抢红包的时候，果断的又是同一组，这就是所谓的缘分吧。。这货94年的却长着180多的大个头，却瘦的跟个杆一样。。和志鹏，东东一样也是东北淫，拥有一身好酒量，他所在的部门加班比较多，比较辛苦，最近几次活动都没有他的身影，，咳咳咳，，貌似还是终身大事比较重要一些。。。可以理解。。。</p>
+<hr>
+<p>好吧。。。就写这么多吧。。。明天又是周一了。。漫长的工作日又要到来了。。苦逼。。<br><img src="http://7xsibp.com1.z0.glb.clouddn.com/%E8%81%9A%E9%A4%90.jpg" alt="蟒山之行"></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/个人感悟/">个人感悟</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-个人随笔-16年5月25日" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/25/个人随笔-16年5月25日/" class="article-date">
+  	<time datetime="2016-05-24T18:09:27.000Z" itemprop="datePublished">2016-05-25</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/25/个人随笔-16年5月25日/">个人随笔-16年5月25日</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这周公司要进行保密检查，这次来到启明第一次经历这种检查，检查的级别挺高–国家保密局，因为涉及到公司保密资格证的问题，公司上上下下都非常重视，重视到影响到正常办公。。。所有的非涉密电脑都不能使用。。好吧。。所以这周三有机会休息一天，趁着这个机会正好写点东西。。<br>上周末，跟主席约了个饭，现在的主席很忙啊，忙的约饭约了一个月。。不过最终的最终还是吃到了一顿大餐，这点还是很不错的，哈哈，原谅这么屌丝的自己吧。。关键是跟着胡总体验了一把喝咖啡的感脚。。除了贵。。没别的了。。当然。。楠哥的 <strong>英国的最好的咖啡</strong> 这个梗就这样结下了，哈哈。。跟主席聊的很high啊，学到了很多东西，了解了很多员工基本接触不到的东西，也让自己感觉到创业者的艰辛。。真的很累。。。。。当然自己不是那号人。。也只能对主席顶礼膜拜了。。主席对于技术的追求和刻苦专研真的很令人佩服。。心里话。。这点还是自己需要加强的地方。。只希望自己能够再努力些吧。。。等发了工资再找胡CEO好好聚聚。。毕竟主席以后飞黄腾达了。。约饭就更难了。。。。。<br>这段时间继续忙着国产化脚本的编写工作。。主要就是解决一些各模块的bug，需要向各个模块的人员进行沟通。。这个过程虽然很苦逼。。体力活。。但是从中也能学到好多东西。。对我们组的业务更加清晰了。。这点还是不错的。。就在今天下午。。完成了现阶段的脚本编写工作。。简单测试了下，效果还可以，能够实现一键安装，系统运行状态也是正常的。还不错。后续可能还需要进行些小的补丁工作。。希望抓紧完成吧。。毕竟x86平台还不是国产化的难点所在。。龙芯平台才是最艰难的地方。。继续加油吧。。<br>转眼间马上快到答辩的日子了。。又有论文修改的任务了。。还是比较重要的，毕竟毕业证在残酷的现实中还是比较重要的。。。月底就要回学校了，，马上就要彻底离开学校的怀抱了。。想想还是有点怀念校园生活。。生活还得继续，可能回来组里就要加班了。。上半年的进度有点延后了。。不过忙点也好，对自己有好处。。。向上吧骚年。。。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/个人感悟/">个人感悟</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-北京游记--感悟_16年5月份" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/14/北京游记--感悟_16年5月份/" class="article-date">
+  	<time datetime="2016-05-14T02:28:42.000Z" itemprop="datePublished">2016-05-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/14/北京游记--感悟_16年5月份/">北京游记--感悟_16年5月份</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>貌似今天就是离开济南，来到北京2个月的日子。。这两个月还真没怎么好好游玩一下北京城。。不过为了以后能够有个装逼的话题。。还是给自己留个念想吧。。</p>
+<ol>
+<li>朝阳公园。。。这个地方说正经的。。不是个景点。。仅仅是北京市的一个公园而已。。可是还是收费5元。。朝阳公园。。顾名思义。。位于朝阳区。。额。朝阳区一个富人扎堆的地方，朝阳公园东边是东四环，西边是著名的三里屯。。在公园的东边。。屹立着乐视。。这两年非常火热的互联网公司。。公园对面的房价据说都是天价，具体的也无从知晓，反正蜗居着各路明星，大腕。。公园里边的环境还是不错的，有很多人周末都带小孩过来high，里边游乐场的设施比较全。。有专门的足球场  篮球场  慢跑道。。印象比较深的是。。交小孩足球的都是外教。。说着乱七八糟我都听不懂的英语。。不知道小孩们是怎么听懂的。。也可能看手势吧。。。。</li>
+<li>北海公园。。。这个地之前只是听说过。上上。。周。。具体哪周也记不清了，老大喊着我们去的。。公园位于后海对过。。当然后海去过好几次了。。文艺范十足的地方，，天天嗷嗷叫。。北海公园以前也是个皇家园林。。好吧。。皇宫贵族就是那么high，，没事天天逛园子。。票价5元。。里边有个巨大的湖。。湖中央有个小山。。在山上做了接近1小时。。。别的没啥印象了。。</li>
+<li>北京大学。。。好吧。。。这是个学生向往的地方。。。对于我等面临毕业的屌丝来说，真的没啥巨大的吸引力了。。从北大的东门地铁站出来，北边第一个路口往西走。。就是这么个不起眼的地方，拿着身份证就可以进。。不过排队的地方。。尼玛。。不说了。。去过的人肯定会跟我有一样蛋疼的感觉。。对于北大校园里边没啥特别深的印象。。未名湖。。博雅塔。。对了。。以前一直以为是象牙塔。。这次见着真迹了。。终于知道人家叫博雅塔。。。</li>
+<li>圆明园。。。从小就从课本上了解到。。。英法联军。。八国联军侵略的地方。。票价具体多少忘了。。买的学生票的半价联票。。最深的印象就是大了。。这个园子不是大是相当的大。。里边偶遇几个画画的老同志。。画境不错这年头安安静静的好同志不多了。。挺欣赏。。终于亲眼所见书上的那几根柱子。。历史的沧桑感犹在。。</li>
+<li>天坛公园。。。好吧。。又是公园。。古代皇上祭天祈福的地方。。其实就是封建统治的一种手段吧。。票价貌似是40。。没买上学生票。。之前去过天坛，只是没仔细逛逛。。去了之前没去的 鬼神厨 回音壁 祈年殿 圜丘坛。。。鬼神厨其实就是杀祭天牲口的地。。回音壁其实早就不回音了。。当年回音的功能也是瞎蒙碰着的，建这个建筑的时候其实并没有这个功能。。祈年殿就是当年吾皇万岁万岁万万岁祭天仪式的地方了。。圜丘坛不知道干啥用的，只知道上边四处通风很凉快。。。还有个印象比较深的就是。。现在的天坛不是从元朝留下的。。嘉庆时期。。一把大火烧光了。。现在的天坛是嘉庆年间重建的。。所以保存比较完整。。</li>
+<li>西单。。。其实这不算是景点了。。西单在天安门的西边。。所以东单就在天安门的东边。。。西单是购物的地方。。各大商场。。好的坏的 都有。。印象比较深的是 西单大悦城  当然这也是富人扎堆的地方。。。很多电影 新书的发布会都在这里干。。这里边真的很绕。。人也很多。。目前消费不起。。</li>
+<li>天通苑-&gt;霍营-&gt;西三旗-&gt;上地-&gt;安河桥北-&gt;颐和园-&gt;圆明园-&gt;清华北大-&gt;五道口-&gt;中关村-&gt;鸟巢-&gt;北辰-&gt;亚运村-&gt;奥林匹克公园-&gt;立水桥-&gt;天通苑   这是我第一次周末骑行的线路。。。全程46.19公里，用时2小时27分。。这一路下来没什么特殊的印象，中途扎胎了。。车胎破处了。。第一次在四环上飞驰。。</li>
+<li>天通苑-&gt;北苑路-&gt;北五环-&gt;望京-&gt;酒仙桥-&gt;东四环-&gt;朝阳公园-&gt;三里屯-&gt;工体-&gt;东直门-&gt;雍和宫-&gt;地坛公园-&gt;北辰集团-&gt;立水桥-&gt;天通苑  第二次周末骑行的线路。。全程47.44公里，用时2小时10分钟。。这一路印象比较深的印象是。。清河。。立水桥下边的那条河。。清河把朝阳和昌平分割开来。。有点常识的都知道。。朝阳富人区。。昌平城乡结合部。。这一条大河分开了穷人和富人。。河的南边别墅扎堆。。北边自建房一堆。。反差很大。。沿途走了走望京。。看了看望京soho。。巨大的船的造型。很漂亮。绿地中心。。阿里已经进驻。。橙色的Alibaba 在楼上挂着很显眼。。还有已经没落的摩托罗拉中国研发中心。。。不知道现在联想接手了摩托。。能不能有点起色。。没想到这边也有个微软。。。之前只知道中关村有座微软研发中心。。望京被媒体说的。。IT创业者的天堂。。。酒仙桥。。之前知道这边有798艺术中心。。360.。。好吧。。说实话对360还是蛮向往的。。毕竟在安全行业目前的巨头。。。三里屯。。白天的三里屯很安静，，没有晚上的繁华，吵闹。。。晚上三里屯才开始工作。。工体。。北京国安的主场。。地处朝阳区比较繁华的地方。。也是富人扎堆的地方。。东直门。。与西直门对着。。有个保利剧院。。别的地点就没什么吸引人的东东了。。。。</li>
+<li>天通苑-&gt;立水桥-&gt;奥森公园-&gt;亚运村-&gt;鸟巢-&gt;北航-&gt;北邮-&gt;西直门桥-&gt;官园桥-&gt;阜成门桥-&gt;月坛北桥-&gt;月坛南桥-&gt;复兴门桥-&gt;西便门桥-&gt;天宁寺桥-&gt;广安门桥-&gt;白纸坊桥-&gt;菜户营桥-&gt;右安门桥-&gt;开阳桥-&gt;陶然桥-&gt;永定门桥-&gt;景泰桥-&gt;玉蜓桥-&gt;左安门桥-&gt;光明桥-&gt;广渠门桥-&gt;东便门桥-&gt;建国门桥-&gt;朝阳门桥-&gt;东四十条桥-&gt;工体-&gt;三里屯-&gt;长虹桥-&gt;农展桥-&gt;燕莎桥-&gt;三元东桥-&gt;三元桥-&gt;三元西桥-&gt;太阳宫桥-&gt;和平东桥-&gt;和平西桥-&gt;惠新西街北口-&gt;立水桥-&gt;天通苑  这是骑行是跟楠哥一块的。。全程70.69公里，用时3小时37分钟。。本来是打算绕行二环路，，结果跟着楠哥去了趟公司，错过了东直门桥-&gt;小街桥-&gt;雍和宫桥-&gt;安定门桥-&gt;钟楼北桥-&gt;鼓楼桥-&gt;德胜门桥-&gt;积水潭桥这一路，好吧。。这里边安定门和钟楼没有去过。。有机会要补上。。。主要是说说自己对于二环路的记忆吧。。其他的路线都很熟悉了。。。从西直门上的二环路，西直门就是北京北站的所在地。。那地方很繁华。。西直门立交。。一个很难搞的家伙。。开车的人应该比我们这种骑车的屌丝更深有体会。。。复兴门桥。。这里有个金融街。。全国的各大银行总部基本都在这。。土豪聚集地。。。从复兴门往东走，就是西长安街能够到达天安门。。天宁寺桥。。从这个地方西二环往西饶了一块。。。菜户营桥。。。从菜户营桥，二环路从西二环变成了南二环。。开阳桥。。从这边往南走就能到达北京南站。。。永定门桥。。。这个桥比较有特点，上边是一个转盘，一看就是老式的立交，高峰期肯定相当堵车。。。左安门桥。。。过了这座桥，南二环转成东二环。。。广渠门桥。。过了这个桥。。二环又往西饶了一块，补回来了。。正好跟西边的对称。。。建国门桥。。。这是二环路跟长安街交接的地方，地点比较繁华，印象比较深的是有建外soho，又是潘石屹的地盘。。。长虹桥。。。从这里转向了东三环。。。三元桥。。。堵车重灾区，前几天貌似媒体各种吹24小时换完三元桥。。。和平西桥。。。从这里离开北三环。。。惠新西街北口。。。地铁5号线从这里穿出地面跑地上了。。这个地方也是北四环。。只能从天桥推车子上去。。。脑残的设计。。</li>
+</ol>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/游记/">游记</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-个人随笔-五月份" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/14/个人随笔-五月份/" class="article-date">
+  	<time datetime="2016-05-14T01:33:06.000Z" itemprop="datePublished">2016-05-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/14/个人随笔-五月份/">个人随笔-五月份</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>时间过得相当快，转眼间离开校园到北京工作两个月了，渐渐的熟悉了北京的生活，没有了当初的青涩和不安。怎么说呢，对于工作的生活和学校生活差别还是蛮大的，看似每天工作强度没有想象的那么大，可还是每天忙忙碌碌的，比学校的节奏要快很多。每天早上7点多起床，匆匆忙忙的收拾这收拾那，8点多钟骑车去上班，当然现在还是蛮享受骑车的感觉的，每天上下班骑行30公里，大约来回需要2个小时，既可以锻炼身体也可以磨练自己的意志，看似简单的东西，如果想要坚持也是比较困难的，当然对于我们这种刚毕业的屌丝学生来说，更重要的原因就是可以省下一天10块钱的地铁费，这样算下来一月也是不小的费用。。。哈哈。。。至少够出去high一顿了~~<br>当然每天北京早上的交通还是无力吐槽了。。在去公司的路上至少有4处拥堵，这种拥堵已经干扰到骑车了。。。不用说也能够想象的到这种堵车程度的惨烈。。好在两轮可以上人行道。。嗷嗷的跑。。现在北京的天气还是比较适合骑行的，早晚的温度还是需要穿长袖的，穿上朕的速干衣，基本身上就不会有汗，挺舒服的。。瞬间联想到呆了6年的大济南。。。别的不说了。。在学校每年这时候已经凉水嗷嗷洗澡了。。那酸爽。。。<br>最近在公司忙着搞漏扫系统的一键部署工作，虽然之前在学校听师兄说要给北邮搞一套。。可是一直并没有进行。。这下好了。。欠下的孽债需要还了。。虽然说这只是个体力活，可是对于从未正经写过shell脚本的屌丝来说，还是费了一些力气，用了一周的时间才完成系统前端的部署。。不过看着自己写的几百行脚本，嗷嗷的跑。。打印这各种信息。。然后。。就没有然后了。。按照进度要求，这个月底需要完成一键部署的工作。。现在看来。。下周差不多能够搞定吧。。等把任务搞定了。。一定要好好学学shell，对于一个linux程序猿。。不能熟练掌握shell。。其实是很苦逼的。。经过这周的摸索，真正体会到了shell的强大。。其实细细想想，这些尼玛都该在学校搞定的。。只怪自己当时太放荡。。其实最近还有很多东西没有整理，，当然这些都是学校欠下的孽债。。这样看来自己在学校的温室里并没有什么努力的迹象。。为了防止忘记整理，在这里先列一下吧。。。</p>
+<hr>
+<ol>
+<li>整理Makefile的东东，这东西可以说是linux程序猿必备的技能包。。可是自己却一直因为某种原因抵触。。啥也不说了。。只能说IDE坑死英雄好汉。。</li>
+<li>整理linux链接库，编译，安装的东东，这东西最近一直在搞。。因为懒惰。。</li>
+<li>整理GNU Autotools的东东，这东西就是目前linux下大型软件比较通用的打包方式，就是传说中的 ./configure  make  make install 的形式。</li>
+<li>整理Cmake的东东，貌似比GNU Autotools更先进的打包方式。。当然自己没啥感觉。。后续编译可能会用到。。</li>
+<li>阅读《程序猿的自我修养》这本书，目前看完了第一章了。。真的很好。。恶补了很多东西。。</li>
+<li>阅读《APUE》。。不用说了。。必读的。。其实早就该看了。。</li>
+<li>整理shell的东东。。至少能够搞定手头的工作需要。。</li>
+</ol>
+<hr>
+<p> 额。。好吧。。只能说。。无力吐槽。。孽债太多。。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/个人感悟/">个人感悟</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="w-个人随笔-四月份" class="article article-type-w" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/19/个人随笔-四月份/" class="article-date">
+  	<time datetime="2016-04-19T12:36:16.000Z" itemprop="datePublished">2016-04-19</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/19/个人随笔-四月份/">个人随笔-四月份</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>转眼间来到北京已经一个多月了，渐渐地适应了北京的快节奏生活。最近一直忙着论文盲审的事情，就没有时间写东西了。前几天回了趟学校，说真的，学校变化挺大的，从帝都嘈杂快节奏的生活回到学校感觉一切都是那么美好。安静的生活，缓慢的节奏，盛开的植被。。。一切的一切都是那么熟悉，可能是因为换了领导的缘故吧，学校的美化工作做的很到位，济大高速、田间小路都用白色的小栅栏扎起来了，让人感觉到淡淡的欧式风情。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/个人感悟/">个人感悟</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="w-个人随笔-三月份" class="article article-type-w" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/01/个人随笔-三月份/" class="article-date">
+  	<time datetime="2016-04-01T13:06:16.000Z" itemprop="datePublished">2016-04-01</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/01/个人随笔-三月份/">个人随笔-三月份</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>明天就是清明假期了，三月份匆匆的从身边走过，让人来不及挽留。转眼间自己来北京，当着传说中的北漂也半个多月了，这期间的感悟和收获颇多。</p>
+<hr>
+<h3 id="现在我正听着熟悉的音乐，回顾着这段时间来的的点点滴滴。"><a href="#现在我正听着熟悉的音乐，回顾着这段时间来的的点点滴滴。" class="headerlink" title="现在我正听着熟悉的音乐，回顾着这段时间来的的点点滴滴。"></a>现在我正听着熟悉的音乐，回顾着这段时间来的的点点滴滴。</h3><hr>
+<h4 id="初来乍到，稍感不适"><a href="#初来乍到，稍感不适" class="headerlink" title="初来乍到，稍感不适"></a>初来乍到，稍感不适</h4><p>还记得刚来北京时候的不适应和孤独无助，好在之前表哥已经给我租好了房子，房子价格还好，每个月750块钱不是很贵，想到了周围的环境应该不是很好，自己本身对房子也没有什么特别的要求，属于自己的小空间就可以了。可是来到之后还是有点小小的失落，在房子去主路的唯一的一条小路上布满了垃圾，用晓云的话来说就是垃圾街，因为面试的原因，她比我先见到了房子。好吧，当时心里就想现在还好，如果是夏天或者下雨的话，不知道会成什么样子。。不过直到现在北京也没有一场雨。。阴天都不多，一片春意盎然的气派，到底垃圾街能成为啥样子，只能以后再看效果了。</p>
+<p>房子是一栋连体的三层小楼，房子门口树立着一个巨大的锅炉（巨大有点夸张，相对于房子的高度来说已经相当高了，哈哈），房子的大门需要用小门禁卡刷卡进出，这一点还是不错的，相对来说安全不少，而且四周都布有摄像头。。对于这种房子来说，最大的好处就是便宜了，也只剩这一个优点了。。谁让咱是穷屌丝北漂一族呢。。心酸。。屋子不是很大，基本常年不会见到sunshine这个东西，对于阳光的渴望相当强烈了。。说实话，刚进屋子的时候，并不是很满意，屋子里的三块地板砖已经烂了。。很不好看，而且屋子也不够温馨，还有蜘蛛网这种东西，话说，我已经好久没有见到有蜘蛛网的房子了。。然后就是乱七八糟糟七八乱的一顿收拾。。好在东西不多，很快东西就整理完毕了。。。</p>
+<p>东西收拾的差不多，出去买了一些日用品，乱七八糟的一大堆，以前在学校从来不用管的东西，在这全部都得花钱买，好在这边东西也不算贵，大约大概跟济大夜市差不多价格吧。。这也是我们选择在这住的重要原因！！！还有一个好处。。快递真的非常方面，圆通，申通，顺丰，京东，邮政都可以送到家的周围几百米。。好吧。。还是将目前还算温馨的小窝的照片保存一下吧。。几年后的我是不是会怀念这时候艰苦的岁月呢。。鬼知道呢。。<br><img src="http://7xsibp.com2.z0.glb.clouddn.com/c14deabcfcee94bea706da05c4a09f0b4b2dfb72.jpg" alt="两张有大作用的小桌子"><br><img src="http://7xsibp.com2.z0.glb.clouddn.com/IMG_20160315_140029.jpg" alt="不是很大的窗户"><br><img src="http://7xsibp.com2.z0.glb.clouddn.com/IMG_20160315_140600.jpg" alt="温馨的小床"><br><img src="http://7xsibp.com2.z0.glb.clouddn.com/IMG_20160315_194247.jpg" alt="到现在也没用过的油烟机"></p>
+<p>下边再来说说北京最能让人吐槽的地方，交通拥堵，以前在济南上学，就感觉济南天天堵堵的，可是来到北京才知道什么才是堵车，我住的地方在五环到六环之间，距离北五环大约至少得有8到10公里，自己骑车子计算过。。这边就是一个村。。可是村里唯一的一条主干道天天堵得嗷嗷叫。。更不要说南北主干道立汤路了，立汤路估计一天不堵车的时候根本不多。。天天堵得嗷嗷叫。。早高峰晚高峰更严重了，整天听着他们嗷嗷按喇叭，当然堵车也有人多的原因，无论他们如何按喇叭，路人依旧往前走，无视他们的存在。。对了。。忘了介绍住的地方了。。我住在北京北边的天通苑。。这边是天通苑的最北边，准确的说不属于天通苑社区。。天通苑社区是全世界最大的社区。。据不完全统计，这边共居住了70多万人。。可以想象唯一的地铁5号线需要多大的运力，才能把那么多人天天来回拉来拉去。。我需要从天通苑北上地铁，这是地铁五号线的终点站，一般终点站都是比较拥挤的，之前听过各种人说地铁多么挤。。只有亲自经历过才知道。。记得第一天上班。。真的被惊讶到了。。当时都不知道手往哪里放，随着人群往年走就行，不走都不行，后边的人会推着你走。。确实有一种超能力的感觉。。<br><img src="http://7xsibp.com2.z0.glb.clouddn.com/39b0387d2169cd3fa47c54a9e961d62afd40e506.jpg" alt="地铁人群"></p>
+<p>这个是起限流作用的措施。。人群需要从进站口进去，一直走到棚子的西头，然后掉头回来，再掉头回去，这样来来回回走上七八趟才有机会进入安检口。。每天就是这样。。从排队到进安检大约20分钟的时间，前两天感觉很别扭。。后来。。就没有后来了。。慢慢就习惯了。。好吧。。快三点了。。该睡觉去了。。</p>
+<h4 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h4><p>4/2/2016 2:55:25 AM 
+　　</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/个人感悟/">个人感悟</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Manfred Zhao
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: true,
+		isPost: false,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html> -->
+
+
+
+
+
+
 
 <!DOCTYPE html>
 <!-- saved from url=(0070)https://s1.kwai.net/kos/s101/nlav11187/pixel/pixel_only_for_test4.html -->
@@ -6,15 +945,93 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script>
-!function(e,t){"object"==typeof exports&&"object"==typeof module?module.exports=t():"function"==typeof define&&define.amd?define([],t):"object"==typeof exports?exports.install=t():e.install=t()}(window,(function(){return function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}return n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=0)}([function(e,t,n){"use strict";var r=this&&this.__spreadArray||function(e,t,n){if(n||2===arguments.length)for(var r,o=0,i=t.length;o<i;o++)!r&&o in t||(r||(r=Array.prototype.slice.call(t,0,o)),r[o]=t[o]);return e.concat(r||Array.prototype.slice.call(t))};!function(e){var t=window;t.KwaiAnalyticsObject=e,t[e]=t[e]||[];var n=t[e];n.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];var o=function(e,t){e[t]=function(){var n=Array.from(arguments),o=r([t],n,!0);e.push(o)}};n.methods.forEach((function(e){o(n,e)})),n.instance=function(e){var t=n._i[e]||[];return n.methods.forEach((function(e){o(t,e)})),t},n.load=function(t,r){n._i=n._i||{},n._i[t]=[],n._i[t]._u="https://s1.kwai.net/kos/s101/nlav11187/pixel/events_for_qa.js",n._t=n._t||{},n._t[t]=+new Date,n._o=n._o||{},n._o[t]=r||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src="https://s1.kwai.net/kos/s101/nlav11187/pixel/events_for_qa.js?sdkid="+t+"&lib="+e;var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(o,i)}}("kwaiq")}])}));
-</script>
-<script>
-kwaiq.load('321');
-kwaiq.page();
-</script>
-           
+        ! function(e, t) {
+            "object" == typeof exports && "object" == typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define([], t) : "object" == typeof exports ? exports.install = t() : e.install = t()
+        }(window, (function() {
+            return function(e) {
+                var t = {};
+
+                function n(r) {
+                    if (t[r]) return t[r].exports;
+                    var o = t[r] = {
+                        i: r,
+                        l: !1,
+                        exports: {}
+                    };
+                    return e[r].call(o.exports, o, o.exports, n), o.l = !0, o.exports
+                }
+                return n.m = e, n.c = t, n.d = function(e, t, r) {
+                    n.o(e, t) || Object.defineProperty(e, t, {
+                        enumerable: !0,
+                        get: r
+                    })
+                }, n.r = function(e) {
+                    "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+                        value: "Module"
+                    }), Object.defineProperty(e, "__esModule", {
+                        value: !0
+                    })
+                }, n.t = function(e, t) {
+                    if (1 & t && (e = n(e)), 8 & t) return e;
+                    if (4 & t && "object" == typeof e && e && e.__esModule) return e;
+                    var r = Object.create(null);
+                    if (n.r(r), Object.defineProperty(r, "default", {
+                            enumerable: !0,
+                            value: e
+                        }), 2 & t && "string" != typeof e)
+                        for (var o in e) n.d(r, o, function(t) {
+                            return e[t]
+                        }.bind(null, o));
+                    return r
+                }, n.n = function(e) {
+                    var t = e && e.__esModule ? function() {
+                        return e.default
+                    } : function() {
+                        return e
+                    };
+                    return n.d(t, "a", t), t
+                }, n.o = function(e, t) {
+                    return Object.prototype.hasOwnProperty.call(e, t)
+                }, n.p = "", n(n.s = 0)
+            }([function(e, t, n) {
+                "use strict";
+                var r = this && this.__spreadArray || function(e, t, n) {
+                    if (n || 2 === arguments.length)
+                        for (var r, o = 0, i = t.length; o < i; o++) !r && o in t || (r || (r = Array.prototype.slice.call(t, 0, o)), r[o] = t[o]);
+                    return e.concat(r || Array.prototype.slice.call(t))
+                };
+                ! function(e) {
+                    var t = window;
+                    t.KwaiAnalyticsObject = e, t[e] = t[e] || [];
+                    var n = t[e];
+                    n.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"];
+                    var o = function(e, t) {
+                        e[t] = function() {
+                            var n = Array.from(arguments),
+                                o = r([t], n, !0);
+                            e.push(o)
+                        }
+                    };
+                    n.methods.forEach((function(e) {
+                        o(n, e)
+                    })), n.instance = function(e) {
+                        var t = n._i[e] || [];
+                        return n.methods.forEach((function(e) {
+                            o(t, e)
+                        })), t
+                    }, n.load = function(t, r) {
+                        n._i = n._i || {}, n._i[t] = [], n._i[t]._u = "https://s1.kwai.net/kos/s101/nlav11187/pixel/testBridge/events.js", n._t = n._t || {}, n._t[t] = +new Date, n._o = n._o || {}, n._o[t] = r || {};
+                        var o = document.createElement("script");
+                        o.type = "text/javascript", o.async = !0, o.src = "https://s1.kwai.net/kos/s101/nlav11187/pixel/testBridge/events.js?sdkid=" + t + "&lib=" + e;
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i)
+                    }
+                }("kwaiq")
+            }])
+        }));
+    </script>
     <script>
-        kwaiq.load('223');
+        kwaiq.load('403985951418762471');
         kwaiq.page();
     </script>
 </head>
@@ -40,7 +1057,8 @@ kwaiq.page();
     <button type="button" onclick="kwaiq.track(&#39;download&#39;)">下载</button>
     <button type="button" onclick="kwaiq.track(&#39;contact&#39;)">联系</button>
     <br>
-    <p>新增事件--------</p>
+    <p>新增事件ziayuanbao--------</p>
+	<h1>外链</h1>
     <button type="button" onclick="kwaiq.track(&#39;firstDeposit&#39;)">首次入金</button>
     <button type="button" onclick="kwaiq.track(&#39;creditApproval&#39;)">授予信用额度</button>
     <button type="button" onclick="kwaiq.track(&#39;loanApplication&#39;)">贷款申请发起</button>
@@ -48,7 +1066,9 @@ kwaiq.page();
     <button type="button" onclick="kwaiq.track(&#39;loanDisbursal&#39;)">贷款放款</button>
     <button type="button" onclick="kwaiq.track(&#39;creditCardApplication&#39;)">申请信用��</button>
     <a href="https://pre-incentive.kwai.com/business/zh-CN">跳到商业化官网</a>
-
+	<a href="https://s1.kwai.net/kos/s101/nlav11187/pixel/nJump/pixel_jump1_preview.html">跳内网</a>
+	<button onclick="kwaiq.bridge('set')">setBridge</button>
+    <button onclick="kwaiq.bridge('get')">getBridge(pixel_id, click_id)</button>
     <iframe class="api-interceptor" frameborder="none" src="./pixel_jump1_files/index.html" style="height: 100% !important; width: 450px !important; min-width: 1px !important; position: fixed !important; inset: 0px 0px auto auto !important; z-index: 2147483647 !important; transform: translateX(470px) !important; transition: all 0.4s ease 0s !important; box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 15px 2px !important;"></iframe>
 
     <iframe class="api-interceptor" frameborder="none" src="./pixel_jump1_files/index(1).html" style="height: 100% !important; width: 450px !important; min-width: 1px !important; position: fixed !important; inset: 0px 0px auto auto !important; z-index: 2147483647 !important; transform: translateX(470px) !important; transition: all 0.4s ease 0s !important; box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 15px 2px !important;"></iframe></body>
